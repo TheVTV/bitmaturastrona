@@ -1,0 +1,221 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.login-logo {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button.login-button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.download-section,
+.file-upload-section {
+  flex: 1;
+  padding: 2rem; /* Increased padding for better spacing */
+  border-radius: 12px; /* Softer rounded corners */
+  background-color: #444444; /* Slightly lighter background for better contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.download-section h2,
+.file-upload-section h2 {
+  margin-bottom: 1.5rem;
+  color: #ffffff; /* White text for better readability */
+}
+
+.download-section button,
+.file-upload-section button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1a1a1a; /* Blue button color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+button {
+  color: #ffffff;
+  background-color: #1a1a1a; /* Blue button color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+.download-section button:hover,
+.file-upload-section button:hover {
+  background-color: #009e42; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:hover {
+  background-color: #009e42; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+input[type="file"] {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #555555; /* Darker background for file input */
+  border: 1px solid #777777;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0.5rem 1rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #009e42;
+}
+
+body {
+  font-size: 1rem; /* Reduce the base font size */
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.2rem; /* Smaller font size for headings */
+}
+
+button,
+input,
+a {
+  font-size: 0.9rem; /* Smaller font size for buttons, inputs, and links */
+}
+
+input[type="file"] {
+  font-size: 0.8rem; /* Smaller font size for file inputs */
+}
+
+.download-section button,
+.file-upload-section button {
+  font-size: 0.9rem; /* Adjust button font size */
+}
+
+.download-section h2,
+.file-upload-section h2 {
+  font-size: 1rem; /* Adjust section heading font size */
+}
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Add spacing between the sections */
+  margin-top: 1rem;
+}
+
+.upload-sheet,
+.upload-files {
+  flex: 1; /* Make both sections take equal space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.upload-sheet h3,
+.upload-files h3 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.upload-sheet button,
+.upload-files button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.upload-sheet button:hover,
+.upload-files button:hover {
+  background-color: #009e42;
+  transform: scale(1.05);
+}
